@@ -1,14 +1,198 @@
+@font-face{
+    font-family: TTCommons;
+    src: url(tt-commons/TT\ Commons\ Medium.otf);
+}
+
+:root{
+    --pad: 70px;
+    --b: #060606;
+    --g: #2dbe5f;
+    --w: #ffffff;
+    --lgray: #ACADAA;
+}   
+
 *{
     margin: 0px;
     padding: 0px;
+    font-family: TTCommons;
+    list-style: none;
+    text-decoration: none;
 }
 html, body{
     width: 100%;
     height: 100%;
 }
 
-.header{
+nav{
+    width: 100%;
+    height: 4rem;
+    background-color: var(--lg); 
+    display: flex;
+    border-bottom: 1px solid var(--lgray) ;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.logo p{
+    margin-left: 10px;
+}
+
+.logo img{
+    width: 50px;
+    margin: 0px 0px 0px var(--pad)
+}
+
+nav .nav-btns {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+}
+
+nav .nav-btns li, nav .nav-btns li a{
+    color: var(--lgray);
+}
+
+nav .nav-btns li a:hover{
+    color: var(--b);
+}
+
+nav .log-btns{
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0px 50px 0px 0px;
+}
+
+nav .log-btns .log-btn{
+    margin: 0px 0px 0px 10px;
+}
+
+nav .log-btns .log-btn a{
+    color: var(--b);
     width: 100%;
     height: 100%;
-    background-color: blueviolet;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+nav .log-btns .sign-up, nav .log-btns .log-btn{
+    height: 35px;
+    width: 80px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav .log-btns .sign-up{
+    border: 2px solid black;
+}
+
+/* Hero Section Styling */
+
+.hero-section{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px 0px 0px 0px;
+    background-image: url(2.jpg);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 700px;
+}
+
+.hero-member-section{
+    display: flex;
+}
+
+.hero-section-btns ul{
+    display: flex;
+    height: 50px;
+    width: fit-content;
+    justify-content: center;
+    align-items: center;
+}
+.hero-section-btns ul li{
+    width: 150px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-section-btns ul li:nth-child(1){
+    background-color: var(--b);
+    border-radius: 10px;
+}
+
+.hero-section-btns ul li:nth-child(1) a{
+    color: var(--w);
+}
+
+.hero-text-section, .hero-member-section, .hero-section-btns {
+    margin: 0px var(--pad) 20px var(--pad);
+}
+
+.hero-text-section{
+    width: 600px;
+}
+
+.hero-text-section h1{
+    font-size: 70px;
+    margin: 0px 0px 20px 0px;
+    display: inline;
+}
+
+.hero-text-section h1 img{
+    width: 50px;
+    height: 50px;
+}
+
+.hero-text-section p{
+    font-size: 20px;
+    max-width: 400px;
+    color: var(--lgray);
+}
+
+.hero-member-section{
+    max-width: 200px;
+    height: 50px;
+    display: flex;
+}
+
+
+.hero-member-section .member{
+    height: 100%;
+    width: 100%;
+}
+
+.hero-section-btns ul li:nth-child(2) a{
+    color: var(--b);
+    display: flex;
+}
+
+.hero-section-btns ul li:nth-child(2) a .svg-section{
+    border: 1px solid gray;
+    width: 20px;
+    margin: 0px 10px 0px 0px;
+    display: flex;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-section-btns ul li:nth-child(2) a .svg-section svg{
+    width: 10px;
+    color: var(--lg);    
+}
+
