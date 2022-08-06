@@ -112,7 +112,7 @@ nav .log-btns .sign-up{
     flex-direction: column;
     justify-content: center;
     padding: 50px 0px 0px 0px;
-    background-image: url(2.jpg);
+    background-image: url(public/images/2.jpg);
     background-repeat: no-repeat;
     background-position: 100%;
     background-size: 700px;
@@ -304,7 +304,7 @@ nav .log-btns .sign-up{
 
 .easy-way-image-section{
     flex: 1;
-    background-image: url(bg3.png);
+    background-image: url(public/images/bg3.png);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
