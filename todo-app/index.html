@@ -15,6 +15,11 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
     />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
     <!-- Title -->
     <title>TODO APP | HTML JS BOOTSTRAP</title>
   </head>
@@ -29,8 +34,12 @@
             <span class="pe-3">To-Do List</span
             ><img height="30" width="30" src="icon.png" alt="To do list" />
           </p>
-          <form class="d-flex flex-row-reverse align-content-center" action="">
+          <form
+            id="form-add-task"
+            class="d-flex flex-row-reverse align-content-center"
+          >
             <input
+              id="task-field"
               class="border-0 ps-4"
               style="
                 height: 50px;
@@ -45,35 +54,18 @@
               id="task"
             />
             <button
-              class="px-5 position-absolute text-white rounded-pill border-0"
-              style="height: 50px; background-color: #ff523b"
+              class="px-5 position-absolute text-white rounded-pill border-0 todo-add-btn btn-hover color-5"
+              style="height: 50px"
               type="submit"
             >
               ADD
             </button>
           </form>
-          <div class="w-100 py-4" style="height: 400px">
-            <div
-              id="todo-item-1"
-              class="w-100 p-0 d-flex justify-content-between align-items-center"
-            >
-              <button
-                class="btn btn-link rounded-circle border border-1 border-secondary d-flex justify-content-center align-items-center check-btn"
-                style="width: 30px; height: 30px"
-                data-target="#todo-item-1"
-              ></button>
-              <p class="p-0 px-2 m-0" style="font-size: 12px; flex: 1">
-                Jamal Muhammad Complete Task
-              </p>
-              <button
-                class="btn rounded-circle btn-link d-flex justify-content-center align-items-center text-secondary fs-3 remove-btn"
-                style="width: 30px; height: 30px"
-                data-target="#todo-item-1"
-              >
-                <i class="bi bi-x"></i>
-              </button>
-            </div>
-          </div>
+          <div
+            id="todo-container"
+            class="w-100 py-4 mt-3"
+            style="height: 400px; overflow-y: scroll"
+          ></div>
         </div>
       </div>
     </div>
@@ -92,6 +84,10 @@
       src="https://code.jquery.com/jquery-3.7.1.min.js"
       integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
       crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/toastify-js"
     ></script>
 
     <!-- Custom JS File -->

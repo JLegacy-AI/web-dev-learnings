@@ -6,7 +6,7 @@
 }
 
 .check-btn:hover {
-  background: #ff523b !important;
+  background: #0d7455 !important;
   color: #fff !important;
   border: none !important;
   cursor: pointer;
@@ -17,8 +17,53 @@
   border: none !important;
   cursor: pointer;
   transition: 0.3s ease;
+  color: white !important;
 }
 
 .remove-btn:hover {
   color: #dc3545 !important;
+}
+
+.todo-add-btn {
+  background: linear-gradient(to right, #a8ff78, #78ffd6);
+  transition: 0.4s all ease-in-out !important;
+}
+
+.todo-add-btn:hover {
+  background: linear-gradient(to right, #78ffd6, #a8ff78);
+  transition: 0.4s all ease-in-out !important;
+  box-shadow: 0 4px 15px 0 rgba(120, 255, 214, 0.75);
+}
+
+#todo-container {
+  overflow: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+#todo-container::-webkit-scrollbar {
+  width: 0;
+}
+
+#todo-container::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+
+.todo-item {
+  box-shadow: 0 3px 6px -1px rgba(0, 0, 0, 0.12),
+    0 10px 36px -4px rgba(77, 96, 232, 0.3);
+  background: #a8ff78;
+  background: -webkit-linear-gradient(to right, #78ffd6, #a8ff78);
+  background: linear-gradient(to right, #78ffd6, #a8ff78);
+  color: white;
+}
+
+.no-task {
+  color: #094e398a;
+  font-size: smaller;
+  font-weight: 500;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
