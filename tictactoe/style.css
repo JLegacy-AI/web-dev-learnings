@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #323539;
+}
+
+div .row:not(:last-child) {
+  border-bottom: 1px solid #ccc;
+}
+
+.row .tictac-box:not(:last-child) {
+  border-right: 1px solid #ccc;
+}
+
+.row div {
+  background-color: transparent !important;
+}
