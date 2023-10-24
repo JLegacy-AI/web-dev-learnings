@@ -10,9 +10,9 @@ document.addEventListener("DOMContentLoaded", function () {
       else {
         clickedElement.setAttribute("data-clicked", "true");
         if (playerTurn === 0)
-          clickedElement.innerHTML = `<i class="bi bi-circle text-primary"></i>`;
+          clickedElement.innerHTML = `<i class="bi bi-circle fs-3 text-primary"></i>`;
         else {
-          clickedElement.innerHTML = `<i class="bi bi-x fs-3 text-danger"></i>`;
+          clickedElement.innerHTML = `<i class="bi bi-x fs-1 text-danger"></i>`;
         }
         playerTurn = playerTurn === 0 ? 1 : 0;
       }
